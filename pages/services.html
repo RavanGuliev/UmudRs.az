@@ -25,24 +25,23 @@ class="flex hover:scale-105 items-center max-w-100 p-2">
 <img src="../images/white1.png" alt="">
 </a>
 <ul class="items-stretch hidden space-x-2  md:flex">
-<li class="flex   items-center px-4 -mb-1 text-white">
+  <li class="flex   items-center px-4 -mb-1 text-white">
     <a rel="noopener noreferrer" href="../pages/about.html"
-        class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Haqqımızda</a>
+        class="flex items-center px-4 -mb-1 text-white  btn1 font-medium  text-[16px] hover:border-[#4c718f] hover:border-b-[0.5px]">Haqqımızda</a>
 </li>
 
 <li class="flex   items-center px-4 -mb-1 text-white">
     <a rel="noopener noreferrer" href="../pages/connection.html"
-        class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Əlaqə</a>
+        class="flex items-center px-4 -mb-1 text-white  btn1 font-medium  text-[16px] hover:border-[#4c718f] hover:border-b-[0.5px]">Əlaqə</a>
 </li>
-
 <li class="flex   items-center px-4 -mb-1 text-white">
     <a rel="noopener noreferrer" href="../pages/customers.html"
-        class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Müştərilər</a>
+        class="flex items-center px-4 -mb-1 text-white  btn1 font-medium  text-[16px] hover:border-[#4c718f] hover:border-b-[0.5px]">Müştərilər</a>
 </li>
 
 <li class="flex   items-center px-4 -mb-1 text-white">
     <a rel="noopener noreferrer" href="../pages/services.html"
-        class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Xidmətlər</a>
+        class="flex items-center px-4 -mb-1 text-white  btn1 font-medium  text-[16px] hover:border-[#4c718f] hover:border-b-[0.5px]">Xidmətlər</a>
 </li>
 </ul>
 <span onclick="opensidebar()" class="flex  open-btn justify-end p-4 md:hidden text-white ">
@@ -52,6 +51,13 @@ class="flex hover:scale-105 items-center max-w-100 p-2">
 </header>
 
 <main  class="bg-[#f3f4f6] h-[100vh] ">
+  <button id="scrollTowp" class=" fixed w-12 h-12 bottom-0 left-0 m-[20px] bg-[#02d758] rounded-full text-center  flex justify-center items-center  md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] z-50 transition-all duration-300 ease-in-out fade-in opacity-100   hover:bg-[#5eae7e] hover:scale-110 ">
+    <a href="https://wa.me/+994506530202?text=Salam, Umud Rs şirkətinə yazırsınız. Sizə necə kömək edə bilərik?"><i class="fa-brands fa-whatsapp text-xl text-white mt-0.5"></i></a>
+</button>
+
+<button id="scrollToTop"  class="w-12 h-12  p-4  fixed bottom-0 right-0 m-[20px] bg-[#ff8e0a] text-center  flex justify-center items-center  md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] z-50  text-[#3F3F3F] rounded-full shadow-lg hover:bg-[#ffc200] hover:scale-110 transition-all duration-300 ease-in-out fade-in opacity-100">
+    <i class="fa-solid fa-arrow-up text-xl text-white text-center mt-0.5"></i>
+</button>
 
   <div id="sidebar"
   class="sidebar hidden flex-col z-[999]   h-full p-3 w-full fixed overflow-hidden bg-[#1e2939] text-[#f5f5f5]">
@@ -59,7 +65,7 @@ class="flex hover:scale-105 items-center max-w-100 p-2">
       <div class="flex-1">
           <ul class="pt-2 pb-4 space-y-3  text-sm">
               <li class="rounded-sm">
-                  <a rel="noopener noreferrer" href="index.html"
+                  <a rel="noopener noreferrer" href="../index.html"
                       class="flex items-center p-2 space-x-3 rounded-md">
                       <i class="fa-solid fa-house text-[20px]"></i>
                       <span>Ana səhifə</span>
@@ -102,51 +108,87 @@ class="flex hover:scale-105 items-center max-w-100 p-2">
 
    
 
-    <section class=" py-16 font-[Poppins]">
+    <section class=" py-16 font-[Poppins] ">
         <div class="max-w-6xl mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold text-[#ff8e0a] mb-10">Xidmətlərimiz</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+          <h2 class=" sm:text-2xl    font-bold text-[#ff8e0a] mb-10  md:text-3xl">Xidmətlərimiz</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 z-[999]">
+  
             <!-- Card 1 -->
-            <div class="bg-white rounded-2xl shadow-md p-8 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4 border-[#ff8e0a]">
-              <div class="flex justify-center mb-4 text-[#ff8e0a]">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white rounded-2xl shadow-md p-3 md:p-6 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4 border-[#ff8e0a]">
+              <div class="flex justify-center mb-3 text-[#ff8e0a]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7M4 17h16M4 21h16" />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Qum Təchizatı</h3>
-              <p class="text-gray-600">Yerli və təbii materiallardan ibarət keyfiyyətli qum məhsullarının təchizatı və satışını həyata keçiririk.</p>
+              <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Qum Təchizatı</h3>
+              <p class="text-xs md:text-sm text-gray-600">Yerli və təbii materiallardan ibarət keyfiyyətli qum məhsullarının təchizatı və satışını həyata keçiririk.</p>
             </div>
-      
+          
             <!-- Card 2 -->
-            <div class="bg-white rounded-2xl shadow-md p-8 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4  border-[#ff8e0a]">
-              <div class="flex justify-center mb-4 text-[#ff8e0a]">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white rounded-2xl shadow-md p-3 md:p-6 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4 border-[#ff8e0a]">
+              <div class="flex justify-center mb-3 text-[#ff8e0a]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m7 7h5m-2-3v6" />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Daşınma Xidməti</h3>
-              <p class="text-gray-600">Sifariş olunan məhsulların etibarlı şəkildə ünvanınıza çatdırılmasını təmin edirik.</p>
+              <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Daşınma Xidməti</h3>
+              <p class="text-xs md:text-sm text-gray-600">Sifariş olunan məhsulların etibarlı şəkildə ünvanınıza çatdırılmasını təmin edirik.</p>
             </div>
-      
+          
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl shadow-md p-8 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4  border-[#ff8e0a]">
-              <div class="flex justify-center mb-4 text-[#ff8e0a]">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white rounded-2xl shadow-md p-3 md:p-6 transition-transform transform hover:scale-105 hover:shadow-xl border-t-4 border-[#ff8e0a]">
+              <div class="flex justify-center mb-3 text-[#ff8e0a]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-12 md:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m2-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Məsləhət Xidməti</h3>
-              <p class="text-gray-600">Layihənizə uyğun material seçimi və sifariş prosesi ilə bağlı peşəkar yönləndirmə.</p>
+              <h3 class="text-base md:text-lg font-semibold text-gray-800 mb-1">Məsləhət Xidməti</h3>
+              <p class="text-xs md:text-sm text-gray-600">Layihənizə uyğun material seçimi və sifariş prosesi ilə bağlı peşəkar yönləndirmə.</p>
             </div>
-      
+          
           </div>
+              
         </div>
       </section>
-      
-
-  
 </main>
+<footer class="bg-[#1e2939]  z-[999]">
+  <div class="mx-auto max-w-5xl px-4 py-4 sm:px-2 lg:px-8">
+    <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 text-white">
+      <li>
+        <a  class=" transition hover:text-gray-700/75" href="#"> Ana Səhife </a>
+      </li>
+
+      <li>
+        <a class=" transition hover:text-gray-700/75" href="../pages/about.html">Haqqımızda </a>
+      </li>
+
+      <li>
+        <a class=" transition hover:text-gray-700/75" href="../pages/connection.html"> Əlaqə</a>
+      </li>
+
+      <li>
+        <a class=" transition hover:text-gray-700/75" href="../pages/services.html"> Xidmətlər </a>
+      </li>
+    </ul>
+    <ul class="mt-12 flex justify-center items-center gap-2 text-white">
+      <li class="flex gap-2 ">
+      <a class="" href="mailto:info@umudrs.az"><i class="fa-solid fa-envelope text-2xl "></i></a>
+      <a href="mailto:info@umudrs.az">e-poçt yazın.</a>
+      </li> 
+    </ul>
+  </div>
+  
+  <hr class="w-full  text-white  rounded-2xl mx-auto mb-3">
+      <p class="text-center text-xs/relaxed text-gray-500 dark:text-gray-400 pb-2">
+        ©  umud rs  2025 bütün hüquqları qorunur.
+        <br />
+        
+        Created by:
+        <a href="https://linktr.ee/khulliev?utm_source=linktree_admin_share" target="_blank" class="text-gray-700 underline transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 " >Ravan Guliev</a>
+      </p>
+    </div>
+  
+</footer>
 
 
 
@@ -154,6 +196,7 @@ class="flex hover:scale-105 items-center max-w-100 p-2">
 
 
 <script src="../js/sidebar.js"></script>
+<script src="../js/index.js"></script>
 
 
 
