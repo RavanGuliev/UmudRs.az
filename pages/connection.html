@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/input.css" />
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"  />
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="p-2 bg-[#ff8e0a] dark:text-gray-800 font-[Poppins]">
+        <div class="container flex justify-around h-14 mx-auto">
+            <a rel="noopener noreferrer" href="../index.html" aria-label="Back to homepage" class="flex hover:scale-105 items-center max-w-100 p-2">
+                <img src="../images/white1.png" alt="">
+            </a>
+            <ul class="items-stretch hidden space-x-2  md:flex">
+
+                <li class="flex   items-center px-4 -mb-1 text-white">
+                    <a rel="noopener noreferrer" href="../index.html"
+                    class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Ana səhifə</a>
+                </li>
+                <li class="flex   items-center px-4 -mb-1 text-white">
+                    <a rel="noopener noreferrer" href="../pages/about.html"
+                    class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Haqqımızda</a>
+                </li>
+                
+                <li class="flex   items-center px-4 -mb-1 text-white">
+                    <a rel="noopener noreferrer" href="../pages/customers.html"
+                    class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Müştərilər</a>
+                </li>
+
+                <li class="flex   items-center px-4 -mb-1 text-white">
+                    <a rel="noopener noreferrer" href="#"
+                    class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Xidmətlər</a>
+                </li>
+                
+                
+            </ul>
+            <span onclick="opensidebar()" class="flex  open-btn justify-end p-4 md:hidden text-white ">
+                <i class="fa-solid fa-bars w-12 h-12 text-[20px]"></i>
+            </span>
+            
+        </div>
+    </header>
+
+    <main class="bg-[#f3f4f6]">
+        
+        <div id="sidebar"
+        class="sidebar hidden flex-col z-[999]   h-full p-3 w-full fixed overflow-hidden bg-[#1e2939] text-[#f5f5f5]">
+        <div class="space-y-3">
+            <div class="flex-1">
+                <ul class="pt-2 pb-4 space-y-3  text-sm">
+                    <li class="rounded-sm">
+                        <a rel="noopener noreferrer" href="index.html"
+                            class="flex items-center p-2 space-x-3 rounded-md">
+                            <i class="fa-solid fa-house text-[20px]"></i>
+                            <span>Ana səhifə</span>
+                        </a>
+                    </li>
+        
+                    <li class="rounded-sm">
+                        <a rel="noopener noreferrer" href="../pages/about.html"
+                            class="flex items-center   p-2 space-x-3 rounded-md">
+                            <i class="fa-solid fa-circle-info text-[20px]"></i>
+                            <span>Haqqımızda</span>
+                        </a>
+                    </li>
+                    <li class="rounded-sm">
+                        <a rel="noopener noreferrer" href="../pages/connection.html"
+                            class="flex items-center p-2 space-x-3 rounded-md">
+                            <i class="fa-solid fa-comments text-[20px]"></i>
+                            <span>Əlaqə</span>
+                        </a>
+                    </li>
+        
+                    <li class="rounded-sm">
+                        <a rel="noopener noreferrer" href="../pages/customers.html"
+                            class="flex items-center   p-2 space-x-3 rounded-md">
+                            <i class="fa-solid fa-user text-[20px]"></i>
+                            <span>Müştərilər</span>
+                        </a>
+                    </li>
+                    <li class="rounded-sm  ">
+                        <a rel="noopener noreferrer" href="../pages/services.html"
+                            class="flex items-center p-2 space-x-3 rounded-md">
+                            <i class="fa-solid fa-snowplow text-[20px]"></i>
+                            <span>Xidmətlər</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+
+
+        <section class="p-6 bg-gray-100 text-gray-900 max-w-[1200px] mx-auto font-[Poppins] h-[100vh] ">
+            <form novalidate="" action="" class="container flex flex-col mx-auto space-y-12">
+                <fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-50">
+                    <div class="space-y-2 col-span-full lg:col-span-1  ">
+                        <p class="font-medium text-xl mb-6 text-left text-[#ff8e0a] uppercase ">Əlaqə məlumatları</p>
+                    <div class=" flex flex-col gap-5">
+                        <!-- <div class="flex flex-row  justify-center items-center gap-2"> -->
+                            <!-- <i class="fa-solid fa-location-dot text-[#ff8e0a] text-2xl "></i>
+                            <p class="text-lg ">dfopkfdofkdofkkdvodkfdlfk </p>
+                        </div> -->
+                        <div>
+                            <i class="fa-solid fa-envelope text-[#ff8e0a] text-2xl px-2"></i>
+                            <a href="info@umudrs.az" class="text-lg">info@umudrs.az</a>
+                        </div>
+                        <div class="flex ">
+                            <i class="fa-solid fa-phone text-[#ff8e0a] text-2xl px-2 text-center mt-3"></i>
+                            <div class="flex flex-col">
+                                <a href="tel:0506530202" class="text-lg">+994 50 653 02 02</a>
+                                <a href="tel:502109867" class="text-lg">+994 50 210 98 67</a> 
+                            </div> 
+                        </div>
+                    </div>      
+                    </div>
+                    <div class="grid grid-cols-6 gap-4 col-span-full lg:col-span-3  ">
+                        <div class="col-span-full sm:col-span-3">
+                            <label for="firstname" class="text-sm">Adınız*</label>
+                            <input id="firstname" type="text" placeholder="Adınız" class="w-full rounded-md focus:ring focus:ring-opacity-75 bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0 ">
+                        </div>
+                        <div class="col-span-full sm:col-span-3">
+                            <label for="lastname" class="text-sm">Soyadınız*</label>
+                            <input id="lastname" type="text" placeholder="Soyadınız" class="w-full rounded-md focus:ring focus:ring-opacity-75  bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0">
+                        </div>
+                        <div class="col-span-full sm:col-span-3">
+                            <label for="email" class="text-sm">e-poçtunuz*</label>
+                            <input id="email" type="email" placeholder="e-poçtunuz" class="w-full rounded-md focus:ring focus:ring-opacity-75  bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0">
+                        </div>
+                        <div class="col-span-full sm:col-span-3">
+                            <label for="email" class="text-sm">Telefon Nömrəniz*</label>
+                            <input id="email" type="email" placeholder="Telefon Nömrəniz" class="w-full rounded-md focus:ring focus:ring-opacity-75  bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0">
+                        </div>
+                        <div class="col-span-full">
+                            <label for="text" class="text-sm">Mövzunuz</label>
+                            <input id="text" type="text" placeholder="Mövzunuz" class="w-full rounded-md focus:ring focus:ring-opacity-75 bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0 ">
+                        </div>
+                        <div class="col-span-full">
+                            <label for="text" class="text-sm">Mesajınız*</label>
+                            <textarea name="text" placeholder="Mesajınız" id="text" class="w-full rounded-md focus:ring focus:ring-opacity-75  bg-[#ecebeb] text-white focus:ring-[#ff8e0a] border-0"></textarea>
+                        </div>
+
+                        <div class="col-span-3">
+                            <label for="form" class="text-sm">Fayl əlavə edin</label>
+                            <input id="form" type="file"  class="w-full rounded-full   text-white  border-0 ">
+                        </div>
+                        <div class="col-span-full flex justify-end p-4">
+                           
+                            <input onclick="gonder()" id="submit" type="submit" value="Göndər"  class=" p-3  rounded-md focus:ring focus:ring-opacity-75  text-black bg-[#ff8e0a] focus:ring-[#ff8e0a] border-0 ">
+                        </div>
+                    </div>
+                </fieldset>
+            
+            </form>
+        </section>
+
+    </main>
+
+ 
+    <script src="../js/sidebar.js  "></script>
+    <script src="../js/connect.js  "></script>
+
+
+
+</body>
+</html>

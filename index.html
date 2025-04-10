@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umud Rs</title>
+<link href="../src/output.css" rel="stylesheet" />
+<link rel="stylesheet" href="../src/input.css" />
+<link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" />
+<link rel="stylesheet" href="../css/slider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class=" md  p-2 bg-[#ff8e0a] dark:text-gray-800 font-[Poppins]  ">
+        <div class="container flex justify-around h-14 mx-auto   ">
+        <a rel="noopener noreferrer" href="index.html" aria-label="Back to homepage"
+        class="flex hover:scale-105 items-center max-w-100 p-2">
+        <img src="../images/white1.png" alt="" class="overflow-hidden">
+        </a>
+        <ul class="items-stretch hidden space-x-2  md:flex">
+        <li class="flex   items-center px-4 -mb-1 text-white">
+            <a rel="noopener noreferrer" href="../pages/about.html"
+                class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Haqqımızda</a>
+        </li>
+
+        <li class="flex   items-center px-4 -mb-1 text-white">
+            <a rel="noopener noreferrer" href="../pages/connection.html"
+                class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Əlaqə</a>
+        </li>
+
+        <li class="flex   items-center px-4 -mb-1 text-white">
+            <a rel="noopener noreferrer" href="../pages/customers.html"
+                class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Müştərilər</a>
+        </li>
+
+        <li class="flex   items-center px-4 -mb-1 text-white">
+            <a rel="noopener noreferrer" href="../pages/services.html"
+                class="flex items-center px-4 -mb-1 text-white  btn font-medium  text-[16px] hover:border-[#ff8e0a] hover:border-b-[0.5px]">Xidmətlər</a>
+        </li>
+        </ul>
+        <span onclick="opensidebar()" class="flex  open-btn justify-end p-4 md:hidden text-white ">
+        <i class="fa-solid fa-bars w-12 h-12 text-[20px]"></i>
+        </span>
+        </div>
+    </header>
+
+
+
+
+
+<main  class=" bg-[#f5f5f] font-[Manrope]">
+    <button id="scrollTowp" class=" fixed w-12 h-12 bottom-0 left-0 m-[20px] bg-[#02d758] rounded-full text-center  flex justify-center items-center  md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] z-50 transition-all duration-300 ease-in-out fade-in opacity-100   hover:bg-[#5eae7e] hover:scale-110 ">
+        <a href="https://wa.me/+994506530202?text=Salam, Umud Rs şirkətinə yazırsınız. Sizə necə kömək edə bilərik?"><i class="fa-brands fa-whatsapp text-xl text-white mt-0.5"></i></a>
+    </button>
+
+    <button id="scrollToTop"  class="w-12 h-12  p-4  fixed bottom-0 right-0 m-[20px] bg-[#ff8e0a] text-center  flex justify-center items-center  md:w-[45px] md:h-[45px] lg:w-[50px] lg:h-[50px] z-50  text-[#3F3F3F] rounded-full shadow-lg hover:bg-[#ffc200] hover:scale-110 transition-all duration-300 ease-in-out fade-in opacity-100">
+        <i class="fa-solid fa-arrow-up text-xl text-white text-center mt-0.5"></i>
+    </button>
+<section class="">
+    <div class=" hidden px-8 py-1 bg-[#f5f5f5] dark:text-gray-800 md:flex  ">
+        <div class=" flex items-center mx-auto container justify-center md:justify-between py-1 px-5 ">
+
+            <div class="flex justify-center items-center gap-2 hover:scale-110  ">
+                <i class="fa-solid fa-phone-volume flex justify-center items-center text-[15px]"></i>
+                <div class=" flex flex-col">
+                    <a href="tel:0506530202" class="  text-[14px]  font-medium text-[#1e2939] "> +994 50 653 02 02</a>
+                    <a href="tel:0502109867" class="text-center text-[12px] font-bold text-[#1e2939] ">+994 50 210 98 67</a>
+                </div>
+            </div>
+            <a href="#" rel="noopener noreferrer" class="items-center gap-2 hidden md:flex">
+                <div class="flex justify-center items-center gap-2  ">
+                    <i class="fa-solid fa-envelope  flex justify-center items-center text-[15px]"></i>
+                    <div class="">
+                        <a href="mailto:info@umudrs.az"
+                            class="text-[14px] font-medium text-[#1e2939] ">info@umudrs.az</a>
+                    </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="sidebar"
+class="sidebar hidden flex-col z-[999]   h-full p-3 w-full fixed overflow-hidden bg-[#1e2939] text-[#f5f5f5]">
+<div class="space-y-3">
+    <div class="flex-1">
+        <ul class="pt-2 pb-4 space-y-3  text-sm">
+            <li class="rounded-sm">
+                <a rel="noopener noreferrer" href="index.html"
+                    class="flex items-center p-2 space-x-3 rounded-md">
+                    <i class="fa-solid fa-house text-[20px]"></i>
+                    <span>Ana səhifə</span>
+                </a>
+            </li>
+
+            <li class="rounded-sm">
+                <a rel="noopener noreferrer" href="../pages/about.html"
+                    class="flex items-center   p-2 space-x-3 rounded-md">
+                    <i class="fa-solid fa-circle-info text-[20px]"></i>
+                    <span>Haqqımızda</span>
+                </a>
+            </li>
+            <li class="rounded-sm">
+                <a rel="noopener noreferrer" href="../pages/connection.html"
+                    class="flex items-center p-2 space-x-3 rounded-md">
+                    <i class="fa-solid fa-comments text-[20px]"></i>
+                    <span>Əlaqə</span>
+                </a>
+            </li>
+
+            <li class="rounded-sm">
+                <a rel="noopener noreferrer" href="../pages/customers.html"
+                    class="flex items-center   p-2 space-x-3 rounded-md">
+                    <i class="fa-solid fa-user text-[20px]"></i>
+                    <span>Müştərilər</span>
+                </a>
+            </li>
+            <li class="rounded-sm  ">
+                <a rel="noopener noreferrer" href="../pages/services.html"
+                    class="flex items-center p-2 space-x-3 rounded-md">
+                    <i class="fa-solid fa-snowplow text-[20px]"></i>
+                    <span>Xidmətlər</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+    <section class="pt-4 px-3 ">
+        <div class="swiper mySwiper  z-[999]">
+            <div class="swiper-wrapper  ">
+                <div class="swiper-slide "><img src="../sliderimg/sliderone.png" alt="slideronepage"
+                        class="object-cover overflow-hidden "></div>
+                <div class="swiper-slide"><img src="../sliderimg/slider 22.png" alt="slidertwopage"
+                        class="object-cover overflow-hidden"></div>
+                <div class="swiper-slide"><img src="../sliderimg/SLIDER3.png" alt="sliderthreepaje"
+                        class="object-cover overflow-hidden"></div>
+            </div>
+
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+    </section>
+  
+    <section>
+        <div
+            class="  max-w-[1000px]  mx-auto mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3 ">
+        
+            <div class="bg-[#ff8e0a] h-20 flex gap-3 p-3 rounded-2xl ring-2 ring-[#fa9c04] hover:bg-[#1e2939]">
+                <i class="fa-solid fa-handshake-angle text-[30px] text-[#fff] p-3"></i>
+                <div>
+                    <h1 class="text-white text-[16px] font-bold">Peşəkarlıq</h1>
+                    <p class="text-gray-200 text-[13px]">Böyük təcrübəyə sahib mütəxəssis komanda.</p>
+                </div>
+            </div>
+
+   
+
+            <div class="bg-[#ff8e0a]  h-20 flex gap-3 p-3 rounded-2xl ring-2 ring-[#fa9c04] hover:bg-[#1e2939]">
+                <i class="fa-solid fa-shield  text-[30px] text-[#fff] p-3"></i>
+                <div>
+                    <h1 class="text-white  font-bold">Təhlükəsizlik</h1>
+                    <p class="text-gray-200 text-[13px]">Dogru seçim, düzgün işləmə prinsipi</p>
+                </div>
+            </div>
+       
+
+            <div class="bg-[#ff8e0a]  h-20 flex gap-3 p-3 rounded-2xl ring-2 ring-[#fa9c04] hover:bg-[#1e2939]">
+                <i class="fa-solid fa-star text-[30px] text-[#fff] p-3"></i>
+                <div>
+                    <h1 class="text-white  font-bold">Keyfiyyət</h1>
+                    <p class="text-gray-200 text-[13px]">Vaxtında çatdırılma, yüksək xidmət</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="  bg-[#f5f5f5] mt-5">
+        <div id="counter-section"
+            class="max-w-[1000px]  mx-auto mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-3 text-[#ff8e0a] ">
+         
+            <div class="flex flex-col gap-3 p-5 text-center ">
+                <i class="fa-solid fa-people-group text-7xl "></i>
+                <h1 id="count2" class=" text-[50px] md:text-[80px] font-bold text-[#1e2939] ">18</h1>
+                <p class="text-xl md:text-2xl font-bold text-gray-500">Komandamız</p>
+            </div>
+
+            <div class="flex flex-col gap-3 p-5  text-center">
+                <i class="fa-solid fa-truck-front text-7xl text[#] "></i>
+                <h1 id="count1" class=" text-[50px] md:text-[80px] font-bold  text-[#1e2939]">500</h1>
+
+                <p class="text-xl md:text-2xl font-bold text-gray-500">Sifariş Sayı </p>
+            </div>
+
+            <div class="flex flex-col gap-3 p-5  text-center">
+                <i class="fa-solid fa-face-smile text-7xl "></i>
+                <h1 id="count3" class=" text-[50px] md:text-[80px] font-bold text-[#1e2939] ">470+</h1>
+                <p class="text-xl md:text-2xl font-bold text-gray-500">Məmnun müştəri</p>
+            </div>
+        </div>
+    </section>
+  
+    <section class=" z-[999]">
+        <div
+            class="flex items-center justify-center  max-w-[200px] mx-auto font-[Manrope] mt-5 bg-[#ff8e0a] hover:bg-[#1e2939] hover:text-[#000]  rounded-2xl shadow-[0px_0px_100px_17px_rgba(0,_0,_0,_0.1)]  ">
+            <h1 class="text-2xl text-white font-bold  p-3 hover:text-[#ff8e0a]  ">Müştərilər</h1>
+        </div>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[800px] mx-auto mt-5 mb-5 px-3 relative">
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/avgroup.png" alt="">
+            </div>
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/rts.png" alt="">
+            </div>
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/holcim.png" alt="">
+            </div>
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/diadem.png" alt="">
+            </div>
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/kristal.png" alt="">
+            </div>
+            <div
+                class="max-w-70 bg-[#dfdfdf] flex justify-center items-center rounded-2xl relative   overflow-hidden  shadow-none transition-shadow duration-300  hover:shadow-lg hover:shadow-gray-400 ">
+                <img class="max-h-50 max-w-full rounded-lg  relative z-0  transition-all duration-300 hover:scale-110"
+                    src="../mushteriler/mermer.png" alt="">
+            </div>
+
+
+
+    </section>
+</main>
+
+
+<footer class="bg-[#1e2939] h-full">
+    <div class="mx-auto max-w-5xl px-4 py-4 sm:px-2 lg:px-8">
+      
+  
+
+  
+      <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 text-white">
+        <li>
+          <a  class=" transition hover:text-gray-700/75" href="#"> Ana Səhife </a>
+        </li>
+  
+        <li>
+          <a class=" transition hover:text-gray-700/75" href="../pages/about.html">Haqqımızda </a>
+        </li>
+  
+        <li>
+          <a class=" transition hover:text-gray-700/75" href="../pages/connection.html"> Əlaqə</a>
+        </li>
+  
+        <li>
+          <a class=" transition hover:text-gray-700/75" href="../pages/services.html"> Xidmətlər </a>
+        </li>
+  
+      
+  
+       
+      </ul>
+  
+      <ul class="mt-12 flex justify-center items-center gap-2 text-white">
+        <li class="flex gap-2 ">
+        <a class="" href="mailto:info@umudrs.az"><i class="fa-solid fa-envelope text-2xl "></i></a>
+        <p>e-poçt yazın.</p>
+        
+
+        </li> 
+   
+        <li class="flex gap-2 ">
+            <a href="tel:0506530202"><i class="fa-solid fa-phone text-lg "></i></a>
+            <p>Bizimlə əlaqə saxlayın.</p>
+            
+        </li>
+       
+        <li>
+          
+          
+        </li>
+  
+        <li>
+          
+        </li>
+  
+        <li>
+         
+        </li>
+      </ul>
+    </div>
+    
+    <hr class="w-full  text-white  rounded-2xl mx-auto mb-3">
+        <p class="text-center text-xs/relaxed text-gray-500 dark:text-gray-400 pb-2">
+          ©  umud rs  2025 bütün hüquqları qorunur.
+          <br />
+          
+          Created by:
+          <a href="https://linktr.ee/khulliev?utm_source=linktree_admin_share" target="_blank" class="text-gray-700 underline transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 " >Ravan Guliev</a>
+        </p>
+      </div>
+    
+  </footer> 
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/timer.js"></script>
+<script src="../js/slider.js"></script>
+
+
+</body>
+
+</html>
